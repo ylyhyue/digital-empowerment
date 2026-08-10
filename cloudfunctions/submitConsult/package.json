@@ -1,0 +1,7 @@
+{
+  "name": "submitConsult",
+  "version": "1.0.0",
+  "description": "小程序咨询写入飞书多维表格",
+  "main": "index.js",
+  "dependencies": {}
+}

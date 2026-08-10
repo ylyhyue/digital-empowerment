@@ -1,0 +1,7 @@
+{
+  "name": "agentApi",
+  "version": "1.0.0",
+  "description": "数字化赋能 · 多智能体网关（callFunction / HTTP 触发双模）",
+  "main": "index.js",
+  "dependencies": {}
+}

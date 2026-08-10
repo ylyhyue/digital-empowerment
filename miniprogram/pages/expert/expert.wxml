@@ -1,0 +1,36 @@
+<!-- pages/expert/expert.wxml -->
+<view class="card">
+  <view class="expert-head">
+    <view class="avatar">师</view>
+    <view>
+      <view class="nm">专家陪跑</view>
+      <view class="role">标准化 & 条码赋能 · 全生命周期陪跑</view>
+      <view class="cert">
+        <text>河南省、平顶山市创业导师</text>
+        <text>中国条码协会标准工作组专家委员</text>
+        <text>中国贸促会商业行业委员会标准化评审专家</text>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class="card">
+  <view class="section-title"><view class="bar"></view>专家简介</view>
+  <view class="muted" style="line-height:1.7; font-size:26rpx; color:#555;">
+    长期从事营商环境标准化评审与中小企业赋能工作，擅长以"标准化 + 条码（GS1）"双轮驱动中小企业数字化转型。兼任省、市大众创业导师，提供从政策解读、方案设计到落地陪跑的全链路辅导。
+  </view>
+</view>
+
+<view class="card">
+  <view class="section-title"><view class="bar"></view>擅长领域</view>
+  <view class="field"><text class="fi">📋</text><text>营商环境标准化评审与咨询</text></view>
+  <view class="field"><text class="fi">📦</text><text>商品条码应用 / 溯源 / 数字化转型</text></view>
+  <view class="field"><text class="fi">🏆</text><text>营商赛事参赛辅导与评审</text></view>
+  <view class="field"><text class="fi">🚀</text><text>创业政策匹配与一对一辅导</text></view>
+</view>
+
+<view class="card">
+  <view class="section-title"><view class="bar"></view>资质标签</view>
+  <text class="tag">评审专家</text><text class="tag b">数据要素赛道</text><text class="tag o">条码师</text>
+  <text class="tag">企业满意赛道</text><text class="tag b">标准化咨询</text><text class="tag o">溯源赋能</text>
+</view>

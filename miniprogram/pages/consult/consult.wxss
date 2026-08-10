@@ -1,0 +1,22 @@
+/* pages/consult/consult.wxss */
+.muted { font-size: 24rpx; color: #888; line-height: 1.6; }
+.bot-card {
+  display: flex; gap: 20rpx; align-items: flex-start;
+  background: #fff; border-radius: 28rpx; margin: 0 24rpx 20rpx; padding: 28rpx;
+  box-shadow: 0 4rpx 20rpx rgba(0,0,0,.04);
+}
+.bot-card .bot-avatar {
+  width: 80rpx; height: 80rpx; border-radius: 20rpx; flex-shrink: 0;
+  background: linear-gradient(135deg,#07C160,#0a9b54);
+  display: flex; align-items: center; justify-content: center; font-size: 42rpx;
+}
+.bot-card .bot-name { font-size: 28rpx; font-weight: 700; color: #222; }
+.bot-card .bot-greet { font-size: 24rpx; color: #666; line-height: 1.6; margin-top: 10rpx; }
+.form-row { display: flex; align-items: center; padding: 22rpx 0; border-bottom: 1rpx solid #f2f2f2; }
+.form-row.col { flex-direction: column; align-items: stretch; }
+.form-row:last-child { border-bottom: none; }
+.label { width: 180rpx; font-size: 26rpx; color: #333; flex-shrink: 0; }
+.input { flex: 1; font-size: 26rpx; color: #222; text-align: right; }
+.picker { flex: 1; text-align: right; font-size: 26rpx; color: #07C160; }
+.textarea { width: 100%; margin-top: 16rpx; height: 200rpx; font-size: 26rpx; color: #222; border: 1rpx solid #eee; border-radius: 16rpx; padding: 16rpx; box-sizing: border-box; }
+.foot { text-align: center; font-size: 22rpx; color: #bbb; margin: 10rpx 0 60rpx; }

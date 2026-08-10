@@ -1,0 +1,12 @@
+/* pages/mine/mine.wxss */
+.muted { font-size: 24rpx; color: #888; line-height: 1.6; }
+.chan { display: flex; gap: 16rpx; }
+.chan-btn {
+  flex: 1; text-align: center; padding: 22rpx 0; border-radius: 20rpx;
+  font-size: 24rpx; font-weight: 700; color: #fff;
+}
+.chan-btn:active { opacity: .85; }
+.chan-btn.feishu { background: linear-gradient(135deg,#3370ff,#1f5cff); }
+.chan-btn.tencent { background: linear-gradient(135deg,#07C160,#0a9b54); }
+.chan-btn.online { background: linear-gradient(135deg,#ff8a1f,#f5670a); }
+.foot { text-align: center; font-size: 22rpx; color: #bbb; margin: 30rpx 0 60rpx; }

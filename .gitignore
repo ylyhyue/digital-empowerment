@@ -1,0 +1,28 @@
+# Dependencies
+cloudfunctions/**/node_modules/
+miniprogram/node_modules/
+
+# Logs
+*.log
+npm-debug.log*
+
+# WeChat DevTools
+cloudfunctionTemplate/
+miniprogram/dist/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+
+# ============ Secrets ============
+# 本地调试密钥（含真实值，绝不提交）
+cloudfunctions/**/secrets.local.js
+# 本地 .env 文件（若使用）
+.env
+.env.local
+.env.*.local
+# 注意：.env.example 与 cloudfunctions/**/secrets.local.example.js 是占位模板，需保留并提交

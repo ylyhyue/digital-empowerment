@@ -1,0 +1,157 @@
+/* app.wxss —— 全局样式（与高保真原型视觉一致） */
+page {
+  background: #f5f6f8;
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+  color: #222;
+}
+
+/* 通用卡片 */
+.card {
+  background: #fff;
+  border-radius: 28rpx;
+  margin: 24rpx;
+  padding: 32rpx;
+  box-shadow: 0 4rpx 20rpx rgba(0,0,0,.04);
+}
+.section-title {
+  font-size: 30rpx;
+  font-weight: 700;
+  color: #222;
+  margin: 8rpx 0 20rpx;
+  display: flex;
+  align-items: center;
+}
+.section-title .bar {
+  width: 8rpx;
+  height: 30rpx;
+  background: #07C160;
+  border-radius: 4rpx;
+  margin-right: 12rpx;
+}
+
+/* 首页 hero */
+.hero {
+  background: linear-gradient(135deg, #07C160, #0a9b54);
+  color: #fff;
+  margin: 24rpx;
+  border-radius: 32rpx;
+  padding: 40rpx 36rpx;
+}
+.hero .h1 { font-size: 40rpx; font-weight: 800; letter-spacing: 2rpx; }
+.hero .sub { font-size: 26rpx; opacity: .92; margin-top: 16rpx; line-height: 1.6; }
+.hero .badges { margin-top: 24rpx; display: flex; flex-wrap: wrap; }
+.hero .badge {
+  background: rgba(255,255,255,.2);
+  padding: 8rpx 18rpx;
+  border-radius: 40rpx;
+  font-size: 22rpx;
+  margin-right: 12rpx;
+  margin-top: 12rpx;
+}
+
+/* 核心服务宫格 */
+.grid2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 24rpx;
+}
+.gcard {
+  width: 48%;
+  background: #fff;
+  border-radius: 28rpx;
+  padding: 28rpx;
+  box-shadow: 0 4rpx 20rpx rgba(0,0,0,.04);
+  margin-bottom: 20rpx;
+  box-sizing: border-box;
+}
+.gcard .ic { font-size: 52rpx; }
+.gcard .t { font-size: 26rpx; font-weight: 700; margin-top: 12rpx; color: #222; }
+.gcard .d { font-size: 22rpx; color: #999; margin-top: 6rpx; line-height: 1.4; }
+
+/* 动态列表 */
+.news { display: flex; gap: 16rpx; align-items: flex-start; padding: 20rpx 0; border-bottom: 1rpx solid #f2f2f2; }
+.news:last-child { border-bottom: none; }
+.news .dot { color: #07C160; font-size: 20rpx; margin-top: 8rpx; }
+.news .nt { font-size: 26rpx; color: #333; line-height: 1.4; }
+.news .nm { font-size: 22rpx; color: #bbb; margin-top: 6rpx; }
+
+/* 字段/擅长领域行 */
+.field { display: flex; align-items: center; gap: 18rpx; padding: 18rpx 0; border-bottom: 1rpx solid #f2f2f2; font-size: 26rpx; color: #444; }
+.field:last-child { border-bottom: none; }
+.field .fi { font-size: 34rpx; }
+.field .b { font-weight: 700; color: #07C160; }
+
+/* 标签 */
+.tag { display: inline-block; background: #eafaf0; color: #07C160; font-size: 22rpx; padding: 4rpx 16rpx; border-radius: 40rpx; margin-right: 12rpx; margin-top: 8rpx; }
+.tag.b { background: #eaf2ff; color: #2b7fff; }
+.tag.o { background: #fff3e6; color: #ff8a1f; }
+
+/* 主按钮 */
+.pillbtn {
+  background: #07C160;
+  color: #fff;
+  text-align: center;
+  padding: 22rpx;
+  border-radius: 48rpx;
+  font-size: 28rpx;
+  font-weight: 600;
+  margin: 24rpx;
+}
+.pillbtn:active { opacity: .85; }
+
+/* 沉淀提示 */
+.capture-note {
+  background: #eafaf0;
+  border: 1rpx dashed #07C160;
+  color: #1a6b3c;
+  font-size: 22rpx;
+  line-height: 1.6;
+  padding: 20rpx 24rpx;
+  border-radius: 20rpx;
+  margin: 20rpx 0;
+}
+
+/* 专家主页 */
+.expert-head { display: flex; gap: 28rpx; align-items: center; }
+.avatar {
+  width: 128rpx; height: 128rpx; border-radius: 50%;
+  background: linear-gradient(135deg, #07C160, #0a9b54);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 60rpx; color: #fff; flex-shrink: 0;
+}
+.expert-head .nm { font-size: 36rpx; font-weight: 800; color: #222; }
+.expert-head .role { font-size: 24rpx; color: #07C160; margin-top: 8rpx; }
+.cert { display: flex; gap: 14rpx; margin-top: 12rpx; flex-wrap: wrap; }
+.cert span { background: #f3f4f6; color: #555; font-size: 22rpx; padding: 6rpx 16rpx; border-radius: 12rpx; border: 1rpx solid #e6e6e6; }
+
+/* 赋能页 banner */
+.empower-banner {
+  background: linear-gradient(135deg, #ff8a1f, #f5670a);
+  color: #fff;
+  margin: 24rpx;
+  border-radius: 32rpx;
+  padding: 40rpx 36rpx;
+}
+.empower-banner .h1 { font-size: 38rpx; font-weight: 800; }
+.empower-banner .sub { font-size: 26rpx; opacity: .95; margin-top: 14rpx; line-height: 1.6; }
+
+/* 赋能模块卡 */
+.mod {
+  display: flex; align-items: center; gap: 24rpx;
+  padding: 28rpx; border-radius: 28rpx; margin: 24rpx; color: #fff;
+}
+.mod.std { background: linear-gradient(135deg, #2b7fff, #1a5fd0); }
+.mod.bar { background: linear-gradient(135deg, #ff8a1f, #f5670a); }
+.mod .mi { font-size: 60rpx; }
+.mod .mt { font-size: 30rpx; font-weight: 800; }
+.mod .md { font-size: 22rpx; opacity: .9; margin-top: 6rpx; }
+
+/* 列表项 */
+.listitem {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 24rpx 4rpx; border-bottom: 1rpx solid #f2f2f2;
+  font-size: 26rpx; color: #333;
+}
+.listitem:last-child { border-bottom: none; }
+.listitem .arrow { color: #ccc; }

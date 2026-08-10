@@ -1,0 +1,40 @@
+/* pages/chat/chat.wxss */
+.chat-page { display: flex; flex-direction: column; height: 100vh; background: #f5f6f8; box-sizing: border-box; }
+
+.bot-head {
+  display: flex; gap: 20rpx; align-items: center;
+  padding: 20rpx 24rpx; background: #fff;
+  box-shadow: 0 2rpx 10rpx rgba(0,0,0,.03);
+}
+.bot-av { width: 76rpx; height: 76rpx; border-radius: 20rpx; display: flex; align-items: center; justify-content: center; font-size: 40rpx; color: #fff; flex-shrink: 0; }
+.bot-info { flex: 1; }
+.bot-name { font-size: 30rpx; font-weight: 700; color: #222; }
+.bot-desc { font-size: 22rpx; color: #999; margin-top: 4rpx; }
+
+.msg-list { flex: 1; padding: 24rpx; box-sizing: border-box; }
+.msg { display: flex; margin-bottom: 24rpx; align-items: flex-start; }
+.msg.user { justify-content: flex-end; }
+.av { width: 64rpx; height: 64rpx; border-radius: 16rpx; display: flex; align-items: center; justify-content: center; font-size: 32rpx; color: #fff; flex-shrink: 0; margin-right: 16rpx; }
+.bubble { max-width: 74%; padding: 20rpx 24rpx; border-radius: 24rpx; font-size: 28rpx; line-height: 1.6; word-break: break-word; white-space: pre-wrap; }
+.ai-b { background: #fff; color: #222; border-top-left-radius: 6rpx; }
+.user-b { background: #07C160; color: #fff; border-top-right-radius: 6rpx; }
+.typing { color: #999; }
+
+.input-bar {
+  display: flex; align-items: center; gap: 16rpx;
+  padding: 16rpx 20rpx;
+  background: #fff; border-top: 1rpx solid #eee;
+  padding-bottom: calc(16rpx + env(safe-area-inset-bottom));
+}
+.expert-link { font-size: 22rpx; color: #ff8a1f; flex-shrink: 0; padding: 10rpx 8rpx; }
+.chat-input { flex: 1; background: #f2f3f5; border-radius: 36rpx; padding: 18rpx 28rpx; font-size: 28rpx; }
+.send-btn { background: #07C160; color: #fff; font-size: 26rpx; padding: 16rpx 32rpx; border-radius: 36rpx; flex-shrink: 0; }
+.send-btn:active { opacity: .85; }
+
+.expert-panel { background: #fff; border-top: 1rpx solid #eee; padding: 24rpx; box-shadow: 0 -4rpx 16rpx rgba(0,0,0,.04); }
+.ep-title { font-size: 28rpx; font-weight: 700; color: #222; }
+.ep-tip { font-size: 22rpx; color: #999; margin: 10rpx 0 16rpx; line-height: 1.5; }
+.ep-input { background: #f2f3f5; border-radius: 16rpx; padding: 18rpx 24rpx; font-size: 26rpx; }
+.ep-btns { display: flex; gap: 20rpx; margin-top: 20rpx; }
+.ep-cancel { flex: 1; text-align: center; padding: 18rpx; border-radius: 36rpx; background: #f2f3f5; color: #666; font-size: 26rpx; }
+.ep-ok { flex: 1; text-align: center; padding: 18rpx; border-radius: 36rpx; background: #07C160; color: #fff; font-size: 26rpx; }

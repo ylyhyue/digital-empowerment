@@ -1,0 +1,16 @@
+<!-- pages/share/share.wxml —— 分享页（占位，可后续升级为海报） -->
+<view class="card" style="text-align:center;padding:60rpx 40rpx;">
+  <view style="font-size:80rpx;margin-bottom:24rpx;">🚀</view>
+  <view style="font-size:36rpx;font-weight:700;color:#222;margin-bottom:16rpx;">数字化赋能 · 全生命周期陪跑</view>
+  <view style="font-size:26rpx;color:#666;line-height:1.6;margin-bottom:40rpx;">
+    标准化 + 条码（GS1）双轮驱动，帮助中小企业迈出数字化转型第一步。
+  </view>
+  <button open-type="share" class="pillbtn" style="margin:0 auto;width:70%;">转发给好友</button>
+</view>
+
+<view class="card">
+  <view class="section-title"><view class="bar"></view>可分享入口</view>
+  <view class="listitem" bindtap="goHome"><text>🏠 回到首页</text><text class="arrow">›</text></view>
+  <view class="listitem" bindtap="goEmpower"><text>📚 数字化赋能详情</text><text class="arrow">›</text></view>
+  <view class="listitem" bindtap="goAi"><text>🤖 博士团队咨询</text><text class="arrow">›</text></view>
+</view>

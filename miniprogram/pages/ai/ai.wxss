@@ -1,0 +1,15 @@
+/* pages/ai/ai.wxss */
+.agent {
+  display: flex; gap: 24rpx; align-items: center;
+  background: #fff; border-radius: 28rpx; margin: 20rpx 24rpx; padding: 28rpx;
+  box-shadow: 0 4rpx 20rpx rgba(0,0,0,.04);
+}
+.agent:active { opacity: .85; }
+.agent .ai { width: 92rpx; height: 92rpx; border-radius: 24rpx; display: flex; align-items: center; justify-content: center; font-size: 46rpx; color: #fff; flex-shrink: 0; }
+.agent .a1 { background: linear-gradient(135deg,#07C160,#0a9b54); }
+.agent .a2 { background: linear-gradient(135deg,#2b7fff,#1a5fd0); }
+.agent .a3 { background: linear-gradient(135deg,#ff8a1f,#f5670a); }
+.agent .a4 { background: linear-gradient(135deg,#8a8f99,#6b7280); }
+.agent .ac { flex: 1; }
+.agent .at { font-size: 30rpx; font-weight: 700; color: #222; }
+.agent .ad { font-size: 22rpx; color: #999; margin-top: 6rpx; line-height: 1.4; }

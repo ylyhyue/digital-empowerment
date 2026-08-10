@@ -1,0 +1,59 @@
+/* pages/web/web.wxss —— 外链加载失败时的兜底页面 */
+.error-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 60rpx;
+  box-sizing: border-box;
+  background: #f5f6f8;
+}
+.error-icon {
+  font-size: 80rpx;
+  margin-bottom: 30rpx;
+}
+.error-title {
+  font-size: 36rpx;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 16rpx;
+}
+.error-msg {
+  font-size: 28rpx;
+  color: #666;
+  text-align: center;
+  line-height: 1.6;
+  margin-bottom: 24rpx;
+}
+.error-url {
+  font-size: 24rpx;
+  color: #2b7fff;
+  word-break: break-all;
+  background: #fff;
+  padding: 20rpx;
+  border-radius: 16rpx;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 40rpx;
+}
+.error-btns {
+  width: 100%;
+}
+.btn {
+  text-align: center;
+  padding: 24rpx;
+  border-radius: 48rpx;
+  font-size: 28rpx;
+  font-weight: 600;
+  margin-bottom: 24rpx;
+}
+.btn.primary {
+  background: #07C160;
+  color: #fff;
+}
+.btn.default {
+  background: #fff;
+  color: #333;
+  border: 1rpx solid #e6e6e6;
+}

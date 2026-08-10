@@ -1,0 +1,6 @@
+{
+  "runtime": "Nodejs18.15",
+  "timeout": 15,
+  "installDependency": true,
+  "envVariables": {}
+}

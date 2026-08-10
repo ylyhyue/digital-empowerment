@@ -1,0 +1,89 @@
+/* pages/empower/empower.wxss —— 数字赋能长页面专用样式 */
+
+.muted {
+  font-size: 26rpx;
+  color: #666;
+  line-height: 1.7;
+}
+
+.para {
+  font-size: 26rpx;
+  color: #333;
+  line-height: 1.8;
+  margin: 18rpx 0;
+}
+.para .b {
+  font-weight: 700;
+  color: #222;
+}
+.para .link {
+  color: #2b7fff;
+  word-break: break-all;
+  text-decoration: underline;
+}
+
+.section-title.small {
+  font-size: 28rpx;
+  margin: 24rpx 0 16rpx;
+}
+
+/* 列表卡片紧凑样式 */
+.list-card {
+  padding: 0 32rpx;
+}
+.list-card .listitem {
+  padding: 26rpx 4rpx;
+}
+
+/* 子级链接列表 */
+.link-list {
+  margin-top: 8rpx;
+}
+.link-list .listitem.sub {
+  padding: 20rpx 0;
+  border-bottom: 1rpx solid #f2f2f2;
+  font-size: 26rpx;
+  color: #333;
+}
+.link-list .listitem.sub:last-child {
+  border-bottom: none;
+}
+
+/* 流程表格 */
+.flow-table {
+  margin: 16rpx 0 24rpx;
+  border: 1rpx solid #e6e6e6;
+  border-radius: 16rpx;
+  overflow: hidden;
+  font-size: 22rpx;
+}
+.flow-table .th,
+.flow-table .tr {
+  display: flex;
+  padding: 16rpx 12rpx;
+  border-bottom: 1rpx solid #e6e6e6;
+}
+.flow-table .th {
+  background: #f7f8fa;
+  font-weight: 700;
+  color: #222;
+}
+.flow-table .tr:last-child {
+  border-bottom: none;
+}
+.flow-table text {
+  flex: 1;
+  text-align: center;
+  padding: 0 6rpx;
+}
+.flow-table text:first-child {
+  flex: 1.2;
+  text-align: left;
+}
+
+.foot {
+  text-align: center;
+  font-size: 22rpx;
+  color: #bbb;
+  padding: 40rpx 0 60rpx;
+}

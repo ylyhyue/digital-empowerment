@@ -1,0 +1,27 @@
+/* pages/agentAdmin/agentAdmin.wxss */
+.card { background:#fff; border-radius:16rpx; margin:20rpx; padding:28rpx; box-shadow:0 2rpx 12rpx rgba(0,0,0,0.04); }
+.section-title { display:flex; align-items:center; font-size:30rpx; font-weight:600; color:#222; }
+.bar { width:8rpx; height:28rpx; background:#07C160; border-radius:4rpx; margin-right:14rpx; }
+.muted { font-size:26rpx; color:#888; }
+
+.loading { text-align:center; padding:80rpx 0; color:#999; font-size:28rpx; }
+
+.agent {
+  display:flex; align-items:center; justify-content:space-between;
+  background:#fff; border-radius:16rpx; margin:20rpx; padding:28rpx;
+  box-shadow:0 2rpx 12rpx rgba(0,0,0,0.04);
+}
+.ac { flex:1; margin-right:20rpx; }
+.at { font-size:30rpx; font-weight:600; color:#222; }
+.ad { font-size:24rpx; color:#888; margin-top:6rpx; }
+
+.tip { font-size:24rpx; color:#07C160; margin:10rpx 30rpx 40rpx; line-height:1.6; }
+
+.perm { text-align:center; padding:60rpx 40rpx; }
+.lock { font-size:80rpx; }
+.pt { font-size:32rpx; font-weight:600; color:#333; margin-top:16rpx; }
+.pm { font-size:26rpx; color:#888; margin-top:14rpx; }
+.claim {
+  display:inline-block; margin-top:40rpx; padding:18rpx 56rpx;
+  background:#07C160; color:#fff; border-radius:40rpx; font-size:28rpx;
+}

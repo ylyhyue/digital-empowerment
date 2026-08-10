@@ -1,0 +1,37 @@
+<!-- pages/consult/consult.wxml -->
+<view class="card">
+  <view class="section-title"><view class="bar"></view>在线填写 · 直达专家团队</view>
+  <view class="muted" style="font-size:24rpx;color:#888;line-height:1.6;margin-bottom:10rpx;">提交后问题将结构化沉淀到飞书多维表格，团队 24 小时内跟进。</view>
+</view>
+
+<view class="bot-card">
+  <view class="bot-avatar">🤖</view>
+  <view class="bot-body">
+    <view class="bot-name">{{agentShow}}</view>
+    <view class="bot-greet">{{greeting}}</view>
+  </view>
+</view>
+
+<view class="card">
+  <view class="form-row">
+    <text class="label">咨询智能体</text>
+    <picker mode="selector" range="{{agents}}" value="{{agentIndex}}" bindchange="onAgent">
+      <view class="picker">{{agents[agentIndex]}}</view>
+    </picker>
+  </view>
+  <view class="form-row">
+    <text class="label">称呼</text>
+    <input class="input" placeholder="您的称呼" value="{{name}}" bindinput="onName" />
+  </view>
+  <view class="form-row">
+    <text class="label">联系方式</text>
+    <input class="input" placeholder="手机号 / 微信" value="{{contact}}" bindinput="onContact" />
+  </view>
+  <view class="form-row col">
+    <text class="label">问题描述</text>
+    <textarea class="textarea" placeholder="请描述您的问题或需求…" value="{{question}}" bindinput="onQuestion" maxlength="500" />
+  </view>
+</view>
+
+<view class="pillbtn" bindtap="submit">提交咨询</view>
+<view class="foot">也可选择：🦅飞书表单 / 📄腾讯文档（在「我的」页）</view>

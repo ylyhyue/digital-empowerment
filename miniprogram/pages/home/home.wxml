@@ -1,0 +1,35 @@
+<!-- pages/home/home.wxml -->
+<view class="hero">
+  <view class="h1">企业数字化赋能</view>
+  <view class="sub">企业全生命周期 · 数字化赋能陪跑者
+让标准化与条码真正帮企业降本、增效、合规、卖得好</view>
+  <view class="badges">
+    <text class="badge">🔄 条码数字化赋能</text>
+    <text class="badge">🏅 标准化评审专家</text>
+    <text class="badge">📦 企业全生命周期陪跑</text>
+    <text class="badge">🚀 创业导师服务</text>
+  </view>
+</view>
+
+<view class="section-title"><view class="bar"></view>核心服务</view>
+<view class="grid2">
+  <view class="gcard" bindtap="goExpert"><view class="ic">🧑‍🏫</view><view class="t">专家主页</view><view class="d">资质名片与擅长领域</view></view>
+  <view class="gcard" bindtap="goEmpower"><view class="ic">📚</view><view class="t">数字化赋能</view><view class="d">标准化 + 条码 · 双轮驱动</view></view>
+  <view class="gcard" bindtap="goAi"><view class="ic">🤖</view><view class="t">博士团队</view><view class="d">条码师培训 / 营商数擎</view></view>
+  <view class="gcard" bindtap="goMine"><view class="ic">📅</view><view class="t">辅导预约</view><view class="d">一对一咨询留资</view></view>
+</view>
+
+<view class="card">
+  <view class="section-title"><view class="bar"></view>全生命周期赋能 · 实实在在的好处</view>
+  <view class="field"><text class="fi">💰</text><text><text class="b">降本</text>：标准化流程 + 条码管理，少跑腿、少材料、少出错</text></view>
+  <view class="field"><text class="fi">⚡</text><text><text class="b">增效</text>：政务办理与供应链提速，办理时长与跑动次数双下降</text></view>
+  <view class="field"><text class="fi">✅</text><text><text class="b">合规</text>：对照标准自查，避开申报与经营"坑点"</text></view>
+  <view class="field"><text class="fi">📈</text><text><text class="b">卖得好</text>：条码 + 溯源让产品可信、可查、好出海</text></view>
+</view>
+
+<view class="card">
+  <view class="section-title"><view class="bar"></view>最新动态</view>
+  <view class="news"><text class="dot">●</text><view><view class="nt">「数据要素赋能营商环境」赛道报名进行中</view><view class="nm">2026-07 · 中国信息协会</view></view></view>
+  <view class="news"><text class="dot">●</text><view><view class="nt">「企业满意看营商」创新实践挑战赛启动</view><view class="nm">2026-07 · 中国贸促会</view></view></view>
+  <view class="news"><text class="dot">●</text><view><view class="nt">条码师（团体标准 T/CABC 18.1）报考指引更新</view><view class="nm">2026-06 · 条码赋能</view></view></view>
+</view>

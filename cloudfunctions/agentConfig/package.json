@@ -1,0 +1,9 @@
+{
+  "name": "agentConfig",
+  "version": "1.0.0",
+  "description": "智能体权限开关（openid 管理员 + 云数据库）",
+  "main": "index.js",
+  "dependencies": {
+    "wx-server-sdk": "^2.7.2"
+  }
+}

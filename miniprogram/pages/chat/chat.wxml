@@ -1,0 +1,52 @@
+<!-- pages/chat/chat.wxml -->
+<view class="chat-page">
+  <!-- 智能体头部 -->
+  <view class="bot-head">
+    <view class="bot-av" style="background:{{agentGrad}}">{{agentEmoji}}</view>
+    <view class="bot-info">
+      <view class="bot-name">{{agent}}</view>
+      <view class="bot-desc">{{agentDesc}}</view>
+    </view>
+  </view>
+
+  <scroll-view class="msg-list" scroll-y scroll-into-view="{{toView}}" scroll-with-animation>
+    <!-- 欢迎语（不计入对话上下文） -->
+    <view class="msg ai">
+      <view class="av" style="background:{{agentGrad}}">{{agentEmoji}}</view>
+      <view class="bubble ai-b">{{greeting}}</view>
+    </view>
+
+    <block wx:for="{{messages}}" wx:key="index">
+      <view wx:if="{{item.role==='user'}}" class="msg user" id="msg-{{index}}">
+        <view class="bubble user-b">{{item.content}}</view>
+      </view>
+      <view wx:else class="msg ai" id="msg-{{index}}">
+        <view class="av" style="background:{{agentGrad}}">{{agentEmoji}}</view>
+        <view class="bubble ai-b">{{item.content}}</view>
+      </view>
+    </block>
+
+    <view wx:if="{{sending}}" class="msg ai">
+      <view class="av" style="background:{{agentGrad}}">{{agentEmoji}}</view>
+      <view class="bubble ai-b typing">思考中…</view>
+    </view>
+  </scroll-view>
+
+  <!-- 转专家面板 -->
+  <view wx:if="{{showExpert}}" class="expert-panel">
+    <view class="ep-title">转专家团队跟进</view>
+    <view class="ep-tip">留下联系方式，专家将结合本次对话 24 小时内回访。</view>
+    <input class="ep-input" placeholder="手机号 / 微信（必填）" value="{{contact}}" bindinput="onContact" />
+    <view class="ep-btns">
+      <view class="ep-cancel" bindtap="toggleExpert">取消</view>
+      <view class="ep-ok" bindtap="submitExpert">提交给专家</view>
+    </view>
+  </view>
+
+  <!-- 输入区 -->
+  <view class="input-bar">
+    <view class="expert-link" bindtap="toggleExpert">📨 转专家</view>
+    <input class="chat-input" placeholder="输入你的问题…" value="{{input}}" bindinput="onInput" confirm-type="send" bindconfirm="send" />
+    <view class="send-btn" bindtap="send">发送</view>
+  </view>
+</view>

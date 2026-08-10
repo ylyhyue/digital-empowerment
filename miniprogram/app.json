@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/expert/expert",
+    "pages/empower/empower",
+    "pages/ai/ai",
+    "pages/mine/mine",
+    "pages/consult/consult",
+    "pages/chat/chat",
+    "pages/agentAdmin/agentAdmin",
+    "pages/web/web",
+    "pages/share/share"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#07C160",
+    "navigationBarTitleText": "数字化赋能",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#f5f6f8"
+  },
+  "tabBar": {
+    "color": "#999999",
+    "selectedColor": "#07C160",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/expert/expert",
+        "text": "专家陪跑"
+      },
+      {
+        "pagePath": "pages/empower/empower",
+        "text": "数字赋能"
+      },
+      {
+        "pagePath": "pages/ai/ai",
+        "text": "博士团队"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的服务"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "cloud": true
+}

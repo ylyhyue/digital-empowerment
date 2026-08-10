@@ -1,0 +1,7 @@
+{
+  "name": "agentChat",
+  "version": "1.0.0",
+  "description": "数字化赋能 · 智能体对话 LLM 云函数",
+  "main": "index.js",
+  "dependencies": {}
+}
