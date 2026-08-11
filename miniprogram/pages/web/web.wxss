@@ -57,3 +57,56 @@
   color: #333;
   border: 1rpx solid #e6e6e6;
 }
+/* 用 button 标签保证真机点击事件可靠，并去掉微信默认 button 样式 */
+button.btn {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  font-size: inherit;
+  font-weight: inherit;
+  color: inherit;
+}
+button.btn::after {
+  border: none;
+}
+.btn-hover {
+  opacity: 0.8;
+}
+.copy-tip {
+  font-size: 24rpx;
+  color: #999;
+  margin-top: 16rpx;
+  text-align: center;
+}
+.qr-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40rpx;
+}
+/* 离屏 canvas：仅用于绘制并导出图片，不展示给用户（display:none 会导致导出空白，故用定位移出屏幕） */
+.qr-canvas-hidden {
+  position: fixed;
+  left: -2000rpx;
+  top: 0;
+  width: 280px;
+  height: 280px;
+}
+.qr-image {
+  width: 360rpx;
+  height: 360rpx;
+  background: #fff;
+  padding: 20rpx;
+  border-radius: 16rpx;
+  box-shadow: 0 4rpx 16rpx rgba(0, 0, 0, 0.06);
+}
+.qr-tip {
+  font-size: 26rpx;
+  color: #666;
+  margin-top: 16rpx;
+}

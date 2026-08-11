@@ -1,13 +1,28 @@
 <!-- pages/web/web.wxml —— 通用外链浏览器 -->
-<web-view wx:if="{{src && !error}}" src="{{src}}" binderror="onError"></web-view>
+<!-- 仅开发版（开发者工具）启用 web-view 预览 -->
+<web-view wx:if="{{useWebview}}" src="{{src}}"></web-view>
 
-<view wx:if="{{error}}" class="error-wrap">
+<!-- 真机统一走复制链接落地页（避开原生 web-view 层级遮挡导致按钮点不动的问题） -->
+<view wx:if="{{!useWebview}}" class="error-wrap">
   <view class="error-icon">🔗</view>
   <view class="error-title">无法直接打开</view>
   <view class="error-msg">{{errorMsg}}</view>
-  <view class="error-url" wx:if="{{originalUrl}}">{{originalUrl}}</view>
-  <view class="error-btns">
-    <view class="btn primary" bindtap="copyLink">复制链接到浏览器打开</view>
-    <view class="btn default" bindtap="goBack">返回上一页</view>
+  <view class="error-url" wx:if="{{originalUrl}}">
+    <text selectable>{{originalUrl}}</text>
   </view>
+
+  <!-- 二维码：导出为图片后用 <image show-menu-by-longpress> 显示，长按即可识别打开 -->
+  <view class="qr-wrap" wx:if="{{originalUrl}}">
+    <image wx:if="{{qrImage}}" class="qr-image" src="{{qrImage}}" mode="aspectFit" show-menu-by-longpress></image>
+    <view class="qr-tip">长按上方二维码，选择"识别二维码"即可打开</view>
+  </view>
+
+  <view class="error-btns">
+    <button class="btn primary" bindtap="copyLink" hover-class="btn-hover">复制链接到浏览器打开</button>
+    <button class="btn default" bindtap="goBack" hover-class="btn-hover">返回上一页</button>
+  </view>
+  <view class="copy-tip" wx:if="{{originalUrl}}">复制失败时可长按二维码识别，或长按上方链接手动复制</view>
+
+  <!-- 离屏 canvas，仅用于绘制二维码后导出图片（不展示） -->
+  <canvas canvas-id="qrcode" class="qr-canvas-hidden"></canvas>
 </view>
