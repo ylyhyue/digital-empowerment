@@ -4,20 +4,24 @@ const FEISHU = 'https://scnke9dkyl7e.feishu.cn/base/Wtgeb0qBpaFByJsNomZcd4Sqn2g?
 const TENCENT = 'https://docs.qq.com/form/page/DSUhTUk9ob1NneGNo';
 
 Page({
-  copyLink(url, name) {
-    wx.setClipboardData({
-      data: url,
-      success: () => wx.showToast({ title: name + '链接已复制', icon: 'none' })
-    });
+  goWeb(url) {
+    wx.navigateTo({ url: '/pages/web/web?url=' + encodeURIComponent(url) });
   },
-  openFeishu() { this.copyLink(FEISHU, '飞书表单'); },
-  openTencent() { this.copyLink(TENCENT, '腾讯文档'); },
+  openFeishu() { this.goWeb(FEISHU); },
+  openTencent() { this.goWeb(TENCENT); },
   openOnline() { wx.navigateTo({ url: '/pages/consult/consult?agent=通用咨询' }); },
+
+  // 我的预约：进入在线填写（咨询/预约）页
+  openConsult() { wx.navigateTo({ url: '/pages/consult/consult?agent=通用咨询' }); },
+
+  // 助手管理：进入权限开关页
   openAgentAdmin() { wx.navigateTo({ url: '/pages/agentAdmin/agentAdmin' }); },
-  contact() {
-    wx.showToast({ title: '请通过「在线填写」留言', icon: 'none' });
-  },
+
+  // 关于本程序：进入分享/说明页
+  openAbout() { wx.navigateTo({ url: '/pages/share/share' }); },
+
+  // 暂未实现的入口（收藏等）：给出明确提示
   noop(e) {
-    wx.showToast({ title: '即将上线：' + e.currentTarget.dataset.name, icon: 'none' });
+    wx.showToast({ title: '即将上线：' + (e.currentTarget.dataset.name || ''), icon: 'none' });
   }
 });

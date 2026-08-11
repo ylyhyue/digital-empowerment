@@ -1,0 +1,22 @@
+/* pages/lab/lab.wxss —— AI 条码实验室 */
+
+.lab-banner {
+  background: linear-gradient(135deg,#07C160,#0a9b54);
+  padding: 64rpx 40rpx 52rpx;
+}
+.lab-banner .h1 { font-size: 44rpx; font-weight: 800; color: #fff; }
+.lab-banner .sub { font-size: 26rpx; color: rgba(255,255,255,.92); margin-top: 16rpx; line-height: 1.6; }
+
+.card { background: #fff; border-radius: 28rpx; margin: 24rpx; padding: 32rpx; box-shadow: 0 4rpx 20rpx rgba(0,0,0,.04); }
+.section-title { display: flex; align-items: center; font-size: 32rpx; font-weight: 800; color: #222; margin: 8rpx 0 18rpx; }
+.section-title .bar { width: 8rpx; height: 32rpx; background: #07C160; border-radius: 4rpx; margin-right: 16rpx; }
+.muted { font-size: 25rpx; color: #666; line-height: 1.7; }
+.para { font-size: 26rpx; color: #444; line-height: 1.7; }
+
+/* 流程表格（与数字化赋能页同源样式） */
+.flow-table { margin: 16rpx 0 24rpx; border: 1rpx solid #e6e6e6; border-radius: 16rpx; overflow: hidden; font-size: 22rpx; }
+.flow-table .th, .flow-table .tr { display: flex; padding: 16rpx 12rpx; border-bottom: 1rpx solid #e6e6e6; }
+.flow-table .th { background: #f7f8fa; font-weight: 700; color: #222; }
+.flow-table .tr:last-child { border-bottom: none; }
+.flow-table text { flex: 1; text-align: center; padding: 0 6rpx; }
+.flow-table text:first-child { flex: 1.2; text-align: left; }

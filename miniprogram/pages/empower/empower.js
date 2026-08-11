@@ -14,5 +14,15 @@ Page({
     wx.navigateTo({
       url: '/pages/web/web?url=' + encodeURIComponent(url)
     });
+  },
+
+  // 跳转到 AI 条码实验室子页（九大作业节点）
+  goLab() {
+    wx.navigateTo({ url: '/pages/lab/lab' });
+  },
+
+  // 资源入口：条码师报考/培训指引 → 进入「我的」预约报名
+  goReserve() {
+    wx.navigateTo({ url: '/pages/consult/consult?agent=' + encodeURIComponent('通用咨询') });
   }
 });

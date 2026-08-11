@@ -1,4 +1,4 @@
-<!-- pages/empower/empower.wxml —— 数字化赋能长页面 -->
+<!-- pages/empower/empower.wxml —— 数字化赋能长页面（案例展示版） -->
 <view class="empower-banner">
   <view class="h1">数字化赋能企业高质量发展</view>
   <view class="sub">以标准化 + 条码（GS1）双轮驱动，帮助中小企业迈出数字化转型第一步</view>
@@ -6,159 +6,98 @@
 
 <view class="card">
   <view class="section-title"><view class="bar"></view>两大抓手 · 都指向数字化赋能</view>
-  <view class="muted">标准化让企业"做对的事"，条码让企业"把事连上网"。两者共同构成中小企业数字化转型的基础底座。</view>
+  <view class="muted">标准化让企业“做对的事”，条码让企业“把事连上网”。两者共同构成中小企业数字化转型的基础底座。</view>
 </view>
 
-<!-- 标准化数字化赋能 -->
-<view class="mod std">
-  <view class="mi">📋</view>
-  <view>
-    <view class="mt">标准化数字化赋能</view>
-    <view class="md">营商环境 · 中小企业标准化 · 政策解读</view>
-  </view>
-</view>
-<view class="card list-card">
-  <view class="listitem" bindtap="goLink" data-url="https://www.sac.gov.cn">
-    <text>📖 标准化科普 国家标准化管理委员会官网</text>
-    <text class="arrow">›</text>
-  </view>
-  <view class="listitem" bindtap="tapItem" data-name="营商政策解读">
-    <text>📰 营商政策解读</text>
-    <text class="arrow">›</text>
-  </view>
-  <view class="listitem" bindtap="tapItem" data-name="标准化标杆案例库">
-    <text>🏆 标准化标杆案例库</text>
-    <text class="arrow">›</text>
-  </view>
-  <view class="listitem" bindtap="tapItem" data-name="企业标准化自评问卷">
-    <text>📝 企业标准化自评问卷</text>
-    <text class="arrow">›</text>
-  </view>
-</view>
-
-<!-- 数字交通：平顶山客货邮融合项目 -->
+<!-- 案例一：标准化数字化赋能——数字交通 -->
 <view class="card">
-  <view class="section-title"><view class="bar"></view>标准化数字化赋能——数字交通</view>
-  <view class="muted" style="margin-bottom:16rpx;">（平顶山客货邮融合项目）</view>
+  <view class="section-title"><view class="bar"></view>标准化数字化赋能案例——数字交通</view>
+  <view class="muted" style="margin-bottom:20rpx;">平顶山市客货邮融合项目，是标准化、数字化赋能于交通物流领域的标杆落地案例，由 <text class="b">1 个团队</text>、<text class="b">1 个实验室</text>、<text class="b">1 个体系</text> 三位一体协同构建，形成可复制、可推广的数字化赋能范式。</view>
 
   <view class="para">
-    <text class="b">1个团队：</text>专家博士团队：
-    <text class="link" bindtap="goLink" data-url="https://ylyhyue.github.io/team-profile">https://ylyhyue.github.io/team-profile</text>
-  </view>
-
-  <view class="para">
-    <text class="b">1个实验室：</text>AI条码实验室。基于三大核心功能，实验室设计完整的机器人作业流程，共九个节点，形成生产产品出库→赋码→印码→贴码→物流运输→零售场所→读码结算→自动送货到家→扫码展示产品信息的无人化闭环。
-  </view>
-
-  <view class="section-title small"><view class="bar"></view>九大作业节点</view>
-  <view class="flow-table">
-    <view class="th"><text>节点</text><text>动作/设备</text><text>数字化能力</text></view>
-    <view class="tr"><text>1. 产品出库</text><text>订单触发</text><text>FMS 任务下发</text></view>
-    <view class="tr"><text>2. 赋码</text><text>编码分配</text><text>GS1/GTIN 唯一身份</text></view>
-    <view class="tr"><text>3. 印码</text><text>喷码/打印</text><text>一维码/二维码输出</text></view>
-    <view class="tr"><text>4. 贴码</text><text>自动贴标</text><text>视觉定位绑定</text></view>
-    <view class="tr"><text>5. 物流运输</text><text>车辆/托盘</text><text>运输轨迹可追溯</text></view>
-    <view class="tr"><text>6. 零售场所</text><text>货架/冷库</text><text>库存状态实时感知</text></view>
-    <view class="tr"><text>7. 读码结算</text><text>扫码通道</text><text>秒级识别结算</text></view>
-    <view class="tr"><text>8. 自动送货</text><text>无人车/机器人</text><text>按码履约到家</text></view>
-    <view class="tr"><text>9. 扫码展示</text><text>消费者扫码</text><text>产品信息透明可信</text></view>
-  </view>
-
-  <view class="para muted">
-    全流程由中央调度管理系统（FMS）统一指挥，机器人按预设任务序列依次执行各环节，固定工位设备（喷码机、打印机、扫码通道、货架传感器等）通过 IO 或 MQTT 与 FMS 交互，操作人员仅需通过可视化看板监控异常，日常作业无需人工介入。
+    <text class="b">1 个团队：</text>专家博士团队牵头总体设计与标准化落地
+    <text class="link" bindtap="goLink" data-url="https://ylyhyue.github.io/team-profile">→ 了解专家博士团队</text>
   </view>
 
   <view class="para">
-    <text class="b">1个体系：</text>平顶山市客货邮融合平台
+    <text class="b">1 个实验室：</text>AI 条码实验室——以条码（GS1）与机器人流程自动化为核心，构建标准化无人作业闭环。
+    <text class="link" bindtap="goLab">→ 查看九大作业节点</text>
+  </view>
+
+  <view class="para">
+    <text class="b">1 个体系：</text>平顶山市客货邮融合平台
   </view>
   <view class="link-list">
     <view class="listitem sub" bindtap="goLink" data-url="http://47.103.52.154:39012/#/hub_node">
-      <text>子平台1：134家三级节点平台</text>
-      <text class="arrow">›</text>
+      <text>子平台1：134 家三级节点平台</text>
+      <text class="enter">点击查看 ›</text>
     </view>
     <view class="listitem sub" bindtap="goLink" data-url="http://1.117.220.9/mobile/member-query">
-      <text>子平台2：500+家平顶山市客货邮企业</text>
-      <text class="arrow">›</text>
+      <text>子平台2：500+ 家平顶山市客货邮企业</text>
+      <text class="enter">点击查看 ›</text>
     </view>
     <view class="listitem sub" bindtap="goLink" data-url="http://chinatrace.org/manufacture2/page/login.html">
-      <text>子平台3：100个标准化冷藏仓商品追溯服务平台</text>
-      <text class="arrow">›</text>
+      <text>子平台3：商品追溯平台（预算100个冷藏仓）</text>
+      <text class="enter">点击查看 ›</text>
     </view>
   </view>
-  <view class="para muted">子平台3登录账号：2324960secpJ77478@HYY</view>
 </view>
 
-<!-- 条码数字化赋能 -->
-<view class="mod bar">
-  <view class="mi">📦</view>
-  <view>
-    <view class="mt">条码数字化赋能</view>
-    <view class="md">商品条码 · 溯源 · 中小企业数字化</view>
-  </view>
-</view>
-<view class="card list-card">
-  <view class="listitem" bindtap="tapItem" data-name="条码/二维码全球通用语言科普">
-    <text>🔤 条码/二维码 全球通用语言 科普</text>
-    <text class="arrow">›</text>
-  </view>
-  <view class="listitem" bindtap="goLink" data-url="https://www.gs1.org">
-    <text>GS1 全球标准体系</text>
-    <text class="arrow">›</text>
-  </view>
-  <view class="listitem" bindtap="goLink" data-url="http://www.ancc.org.cn">
-    <text>GS1 China 中国物品编码中心标准体系</text>
-    <text class="arrow">›</text>
-  </view>
-  <view class="listitem" bindtap="goLink" data-url="https://cabc.net.cn">
-    <text>参与起草客货邮标准化冷藏仓使用规范（全国团体标准）</text>
-    <text class="arrow">›</text>
-  </view>
-  <view class="listitem" bindtap="tapItem" data-name="条码+溯源赋能案例">
-    <text>🔗 条码+溯源赋能案例 平顶山客货邮融合服务平台</text>
-    <text class="arrow">›</text>
-  </view>
-  <view class="listitem" bindtap="tapItem" data-name="条码师报考/培训指引">
-    <text>🎓 条码师报考 / 培训指引 / 进入「我的」预约报名</text>
-    <text class="arrow">›</text>
-  </view>
-</view>
-
-<!-- 数字营商 -->
+<!-- 案例二：条码数字化赋能——数字营商 -->
 <view class="card">
-  <view class="section-title"><view class="bar"></view>条码数字化赋能——数字营商</view>
+  <view class="section-title"><view class="bar"></view>条码数字化赋能案例——数字营商</view>
+  <view class="muted" style="margin-bottom:20rpx;">以商品条码（GS1）这一全球通用商务语言为纽带，赋能营商环境数字化监测与标准化试点，形成可复制的“条码 + 标准化”赋能样板。</view>
 
   <view class="para">
-    <text class="b">1个条码/二维码（全球通用商务语言）：</text>
-    GS1 全球标准体系 <text class="link" bindtap="goLink" data-url="https://www.gs1.org">https://www.gs1.org</text>，
-    GS1 China 中国物品编码中心标准体系 <text class="link" bindtap="goLink" data-url="http://www.ancc.org.cn">http://www.ancc.org.cn</text>。
+    <text class="b">1 个通用语言：</text>商品条码 / 二维码（GS1 全球标准体系）
+    <text class="link" bindtap="goLink" data-url="https://www.gs1.org">GS1 全球官网</text>、
+    <text class="link" bindtap="goLink" data-url="http://www.ancc.org.cn">中国物品编码中心</text>。
   </view>
 
   <view class="para">
-    <text class="b">1个监测平台：</text>中国营商环境监测中心营商环境监测服务平台
-    <text class="link" bindtap="goLink" data-url="http://www.chbeo.org.cn">http://www.chbeo.org.cn</text>，
-    全国 5000+ 家监测站，
+    <text class="b">1 个监测平台：</text>中国营商环境监测中心营商环境监测服务平台，全国 5000+ 家监测站
+    <text class="link" bindtap="goLink" data-url="http://www.chbeo.org.cn">监测平台官网</text>、
     <text class="link" bindtap="goLink" data-url="http://www.chbeo.org.cn/zhandian_list.aspx?classid=31">站点名单</text>。
-    商品条码作为唯一身份证赋能监测站点数字化转型。
+    商品条码作为唯一身份证，赋能监测站点数字化转型。
   </view>
 
   <view class="para">
-    <text class="b">100+ 家试点：</text>中国贸促会商业行业委员会“营商环境促进标准化试点”，评审专家公示
-    <text class="link" bindtap="goLink" data-url="http://www.chbeo.org.cn/article_view.aspx?classid=6&id=7744">第一批</text>，
-    全国 100 余个试点单位（1000+ 以上监测站点）通过评审验收；
-    第三批验收名单 <text class="link" bindtap="goLink" data-url="http://www.chbeo.org.cn/article_view.aspx?classid=6&id=9652">点击查看</text>。
+    <text class="b">100+ 家试点：</text>中国贸促会商业行业委员会“营商环境促进标准化试点”
+    <text class="link" bindtap="goLink" data-url="http://www.chbeo.org.cn/article_view.aspx?classid=6&id=7744">评审专家公示</text>、
+    <text class="link" bindtap="goLink" data-url="http://www.chbeo.org.cn/article_view.aspx?classid=6&id=9652">第三批验收名单</text>，
+    全国 100 余个试点单位（1000+ 监测站点）通过评审验收。
   </view>
 
   <view class="para">
-    <text class="b">1个配套标准：</text>参与起草客货邮标准化冷藏仓使用规范（条码师岗位能力要求）团体标准
+    <text class="b">1 个配套标准：</text>参与起草客货邮标准化冷藏仓使用规范（条码师岗位能力要求）团体标准
     <text class="link" bindtap="goLink" data-url="https://cabc.net.cn/Standards/2038.shtml">CABC 标准</text>、
     <text class="link" bindtap="goLink" data-url="https://www.ttbz.org.cn/standardDetail/zqj9zxhj48ksy90ppr6teznyubjhq7s.html">全国团体标准信息平台</text>。
   </view>
 
   <view class="para">
-    <text class="b">1个开源试点项目：</text>
-    <text class="link" bindtap="goLink" data-url="https://github.com/ylyhyue/kehuoyou-knowledge">https://github.com/ylyhyue/kehuoyou-knowledge</text>
-    平顶山市客货邮试点开源项目。
+    <text class="b">1 个开源试点：</text>平顶山市客货邮试点开源项目
+    <text class="link" bindtap="goLink" data-url="https://github.com/ylyhyue/kehuoyou-knowledge">GitHub 开源仓库</text>，
+    公开沉淀标准体系、案例与迭代记录，供同行复用。
   </view>
 </view>
 
-<view class="foot">个人专业展示 · 不代表所在单位 · 公益科普</view>
+<!-- 资源入口：条码数字化赋能 -->
+<view class="mod bar">
+  <view class="mi">📦</view>
+  <view>
+    <view class="mt">条码数字化赋能 · 资源入口</view>
+    <view class="md">标准 · 培训</view>
+  </view>
+</view>
+<view class="card list-card">
+  <view class="listitem" bindtap="goLink" data-url="https://www.sac.gov.cn">
+    <text>🏛️ 权威学习网站 / 国家标准化管理委员会</text>
+    <text class="arrow">›</text>
+  </view>
+  <view class="listitem" bindtap="goReserve">
+    <text>🎓 条码师报考 / 培训指引 / 进入「我的」预约报名</text>
+    <text class="arrow">›</text>
+  </view>
+</view>
+
+<view class="foot">专业展示，不代表任何单位</view>

@@ -12,5 +12,5 @@
   <view class="section-title"><view class="bar"></view>可分享入口</view>
   <view class="listitem" bindtap="goHome"><text>🏠 回到首页</text><text class="arrow">›</text></view>
   <view class="listitem" bindtap="goEmpower"><text>📚 数字化赋能详情</text><text class="arrow">›</text></view>
-  <view class="listitem" bindtap="goAi"><text>🤖 博士团队咨询</text><text class="arrow">›</text></view>
+  <view class="listitem" bindtap="goAi"><text>🤖 咨询助手</text><text class="arrow">›</text></view>
 </view>

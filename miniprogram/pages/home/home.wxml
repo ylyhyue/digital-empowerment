@@ -15,7 +15,7 @@
 <view class="grid2">
   <view class="gcard" bindtap="goExpert"><view class="ic">🧑‍🏫</view><view class="t">专家主页</view><view class="d">资质名片与擅长领域</view></view>
   <view class="gcard" bindtap="goEmpower"><view class="ic">📚</view><view class="t">数字化赋能</view><view class="d">标准化 + 条码 · 双轮驱动</view></view>
-  <view class="gcard" bindtap="goAi"><view class="ic">🤖</view><view class="t">博士团队</view><view class="d">条码师培训 / 营商数擎</view></view>
+  <view class="gcard" bindtap="goAi"><view class="ic">🤖</view><view class="t">咨询助手</view><view class="d">条码师培训 / 营商数擎</view></view>
   <view class="gcard" bindtap="goMine"><view class="ic">📅</view><view class="t">辅导预约</view><view class="d">一对一咨询留资</view></view>
 </view>
 
@@ -29,7 +29,28 @@
 
 <view class="card">
   <view class="section-title"><view class="bar"></view>最新动态</view>
-  <view class="news"><text class="dot">●</text><view><view class="nt">「数据要素赋能营商环境」赛道报名进行中</view><view class="nm">2026-07 · 中国信息协会</view></view></view>
-  <view class="news"><text class="dot">●</text><view><view class="nt">「企业满意看营商」创新实践挑战赛启动</view><view class="nm">2026-07 · 中国贸促会</view></view></view>
-  <view class="news"><text class="dot">●</text><view><view class="nt">条码师（团体标准 T/CABC 18.1）报考指引更新</view><view class="nm">2026-06 · 条码赋能</view></view></view>
+  <view class="news" bindtap="goLink" data-url="http://www.cia.org.cn">
+    <text class="dot">●</text>
+    <view>
+      <view class="nt">「数据要素赋能营商环境」赛道报名进行中</view>
+      <view class="nm">2026-07 · 中国信息协会</view>
+    </view>
+    <text class="arrow">›</text>
+  </view>
+  <view class="news" bindtap="goLink" data-url="http://www.ccpit.org">
+    <text class="dot">●</text>
+    <view>
+      <view class="nt">「企业满意看营商」创新实践挑战赛启动</view>
+      <view class="nm">2026-07 · 中国贸促会</view>
+    </view>
+    <text class="arrow">›</text>
+  </view>
+  <view class="news" bindtap="goLink" data-url="https://cabc.net.cn">
+    <text class="dot">●</text>
+    <view>
+      <view class="nt">条码师（团体标准 T/CABC 18.1）报考指引更新</view>
+      <view class="nm">2026-06 · 条码赋能</view>
+    </view>
+    <text class="arrow">›</text>
+  </view>
 </view>

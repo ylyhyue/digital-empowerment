@@ -10,3 +10,17 @@
 .chan-btn.tencent { background: linear-gradient(135deg,#07C160,#0a9b54); }
 .chan-btn.online { background: linear-gradient(135deg,#ff8a1f,#f5670a); }
 .foot { text-align: center; font-size: 22rpx; color: #bbb; margin: 30rpx 0 60rpx; }
+
+/* 微信客服按钮：去除默认样式，融入列表项 */
+.contact-item { padding: 0 4rpx; }
+.contact-btn {
+  background: transparent;
+  border: none;
+  padding: 24rpx 0;
+  margin: 0;
+  font-size: 26rpx;
+  color: #333;
+  text-align: left;
+  line-height: 1.4;
+}
+.contact-btn::after { border: none; }

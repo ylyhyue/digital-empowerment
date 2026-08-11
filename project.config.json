@@ -46,7 +46,7 @@
   },
   "appid": "wxa69c568b600b936a",
   "projectname": "数字化赋能",
-  "libVersion": "2.20.1",
+  "libVersion": "3.17.0",
   "cloudfunctionTemplateRoot": "cloudfunctionTemplate/",
   "condition": {
     "miniprogram": {

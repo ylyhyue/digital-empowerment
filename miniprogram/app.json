@@ -9,7 +9,8 @@
     "pages/chat/chat",
     "pages/agentAdmin/agentAdmin",
     "pages/web/web",
-    "pages/share/share"
+    "pages/share/share",
+    "pages/lab/lab"
   ],
   "window": {
     "navigationBarBackgroundColor": "#07C160",
@@ -37,7 +38,7 @@
       },
       {
         "pagePath": "pages/ai/ai",
-        "text": "博士团队"
+        "text": "咨询助手"
       },
       {
         "pagePath": "pages/mine/mine",

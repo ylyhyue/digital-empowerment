@@ -1,1 +1,42 @@
-/* pages/expert/expert.wxss —— 复用全局样式，本页无需额外样式 */
+/* pages/expert/expert.wxss —— 专家陪跑团卡片 */
+.ecard {
+  display: flex;
+  gap: 28rpx;
+  align-items: flex-start;
+  background: #fff;
+  border-radius: 28rpx;
+  margin: 24rpx;
+  padding: 32rpx;
+  box-shadow: 0 4rpx 20rpx rgba(0,0,0,.04);
+}
+.ava {
+  width: 116rpx;
+  height: 116rpx;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 52rpx;
+  color: #fff;
+  flex-shrink: 0;
+}
+.ava.g { background: linear-gradient(135deg, #07C160, #0a9b54); }
+.ava.b { background: linear-gradient(135deg, #2b7fff, #1a5fd0); }
+.ava.o { background: linear-gradient(135deg, #ff8a1f, #f5670a); }
+
+.ecard .info { flex: 1; min-width: 0; }
+.ecard .nm { font-size: 32rpx; font-weight: 800; color: #222; }
+.ecard .role { font-size: 24rpx; color: #07C160; margin-top: 8rpx; }
+.ecard .bio { font-size: 25rpx; color: #555; line-height: 1.7; margin-top: 14rpx; }
+.ecard .bio.tip { color: #ff8a1f; }
+.ecard .tags { margin-top: 16rpx; }
+.ecard .tag {
+  display: inline-block;
+  background: #eafaf0;
+  color: #07C160;
+  font-size: 22rpx;
+  padding: 4rpx 16rpx;
+  border-radius: 40rpx;
+  margin-right: 12rpx;
+  margin-top: 8rpx;
+}

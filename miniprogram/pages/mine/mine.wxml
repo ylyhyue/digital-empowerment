@@ -1,7 +1,7 @@
 <!-- pages/mine/mine.wxml -->
 <view class="card">
   <view class="expert-head">
-    <view class="avatar">师</view>
+    <view class="avatar">赋</view>
     <view>
       <view class="nm">数字化赋能 </view>
       <view class="role">数字化赋能 · 全生命周期陪跑</view>
@@ -11,7 +11,7 @@
 
 <view class="card">
   <view class="section-title"><view class="bar"></view>提交咨询 · 三通道沉淀</view>
-  <view class="muted" style="font-size:24rpx;color:#888;line-height:1.6;margin-bottom:20rpx;">任选其一，团队 24 小时内跟进。与「中原帮办」三通道一致。</view>
+  <view class="muted" style="font-size:24rpx;color:#888;line-height:1.6;margin-bottom:20rpx;">任选其一，团队 24 小时内跟进。与「中原帮办」三通道一致。飞书 / 腾讯文档将在内置浏览器打开，未配置业务域名时会提示复制链接到浏览器。</view>
   <view class="chan">
     <view class="chan-btn feishu" bindtap="openFeishu">🦅 飞书表单</view>
     <view class="chan-btn tencent" bindtap="openTencent">📄 腾讯文档</view>
@@ -21,11 +21,14 @@
 
 <view class="card">
   <view class="section-title"><view class="bar"></view>我的服务</view>
-  <view class="listitem" bindtap="noop" data-name="我的预约"><text>📅 我的预约</text><text class="arrow">›</text></view>
+  <view class="listitem" bindtap="openConsult" data-name="我的预约"><text>📅 我的预约</text><text class="arrow">›</text></view>
   <view class="listitem" bindtap="noop" data-name="我的收藏"><text>⭐ 我的收藏</text><text class="arrow">›</text></view>
-  <view class="listitem" bindtap="contact" data-name="微信客服"><text>💬 微信客服</text><text class="arrow">›</text></view>
-  <view class="listitem" bindtap="openAgentAdmin" data-name="智能体管理"><text>🤖 博士团队管理</text><text class="arrow">›</text></view>
-  <view class="listitem" bindtap="noop" data-name="关于本程序"><text>ℹ️ 关于本程序</text><text class="arrow">›</text></view>
+  <view class="listitem contact-item">
+    <button class="contact-btn" open-type="contact">💬 微信客服</button>
+    <text class="arrow">›</text>
+  </view>
+  <view class="listitem" bindtap="openAgentAdmin" data-name="助手管理"><text>🤖 助手管理</text><text class="arrow">›</text></view>
+  <view class="listitem" bindtap="openAbout" data-name="关于本程序"><text>ℹ️ 关于本程序</text><text class="arrow">›</text></view>
 </view>
 
-<view class="foot">个人专业展示 · 不代表所在单位 · 公益科普</view>
+<view class="foot">专业展示，不代表任何单位</view>

@@ -1,0 +1,25 @@
+<!-- pages/lab/lab.wxml —— AI 条码实验室 · 九大作业节点 -->
+<view class="lab-banner">
+  <view class="h1">AI 条码实验室</view>
+  <view class="sub">以条码（GS1）与机器人流程自动化为核心，构建标准化无人作业闭环</view>
+</view>
+
+<view class="card">
+  <view class="section-title"><view class="bar"></view>九大作业节点</view>
+  <view class="muted" style="margin-bottom:20rpx;">实验室基于三大核心功能，设计了完整的机器人作业流程，形成“生产产品出库 → 赋码 → 印码 → 贴码 → 物流运输 → 零售场所 → 读码结算 → 自动送货到家 → 扫码展示产品信息”的无人化闭环。</view>
+  <view class="flow-table">
+    <view class="th"><text>节点</text><text>动作/设备</text><text>数字化能力</text></view>
+    <view class="tr"><text>1. 产品出库</text><text>订单触发</text><text>FMS 任务下发</text></view>
+    <view class="tr"><text>2. 赋码</text><text>编码分配</text><text>GS1/GTIN 唯一身份</text></view>
+    <view class="tr"><text>3. 印码</text><text>喷码/打印</text><text>一维码/二维码输出</text></view>
+    <view class="tr"><text>4. 贴码</text><text>自动贴标</text><text>视觉定位绑定</text></view>
+    <view class="tr"><text>5. 物流运输</text><text>车辆/托盘</text><text>运输轨迹可追溯</text></view>
+    <view class="tr"><text>6. 零售场所</text><text>货架/冷库</text><text>库存状态实时感知</text></view>
+    <view class="tr"><text>7. 读码结算</text><text>扫码通道</text><text>秒级识别结算</text></view>
+    <view class="tr"><text>8. 自动送货</text><text>无人车/机器人</text><text>按码履约到家</text></view>
+    <view class="tr"><text>9. 扫码展示</text><text>消费者扫码</text><text>产品信息透明可信</text></view>
+  </view>
+  <view class="para muted">
+    全流程由中央调度管理系统（FMS）统一指挥，机器人按预设任务序列依次执行各环节，固定工位设备（喷码机、打印机、扫码通道、货架传感器等）通过 IO 或 MQTT 与 FMS 交互，操作人员仅需通过可视化看板监控异常，日常作业无需人工介入。
+  </view>
+</view>

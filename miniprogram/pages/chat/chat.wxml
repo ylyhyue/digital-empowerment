@@ -1,10 +1,10 @@
 <!-- pages/chat/chat.wxml -->
 <view class="chat-page">
-  <!-- 智能体头部 -->
+  <!-- 助手头部 -->
   <view class="bot-head">
     <view class="bot-av" style="background:{{agentGrad}}">{{agentEmoji}}</view>
     <view class="bot-info">
-      <view class="bot-name">{{agent}}</view>
+      <view class="bot-name">{{agentName}}</view>
       <view class="bot-desc">{{agentDesc}}</view>
     </view>
   </view>

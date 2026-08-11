@@ -1,7 +1,7 @@
 <!-- pages/agentAdmin/agentAdmin.wxml -->
 <view class="card">
-  <view class="section-title"><view class="bar"></view>智博士团队连接权限</view>
-  <view class="muted" style="font-size:24rpx;color:#888;line-height:1.6;">开启后，该博士团队才会显示在小程序「博士团队」页并可对话；关闭后将从小程序隐藏（H5 专属链接不受影响，仍独立可用）。</view>
+  <view class="section-title"><view class="bar"></view>咨询助手连接权限</view>
+  <view class="muted" style="font-size:24rpx;color:#888;line-height:1.6;">开启后，该咨询助手才会显示在小程序「咨询助手」页并可对话；关闭后将从小程序隐藏（H5 专属链接不受影响，仍独立可用）。</view>
 </view>
 
 <block wx:if="{{loading}}">
@@ -25,7 +25,7 @@
     <view class="ac"><view class="at">创业问答团队</view><view class="ad">创业政策 / 标准化 / 条码 通用答疑</view></view>
     <switch checked="{{agents[3].enabled}}" color="#07C160" bindchange="toggle" data-key="创业问答 Bot"/>
   </view>
-  <view class="tip">提示：关闭某博士团队后，小程序内即不可见；其 H5 专属链接仍可独立访问。</view>
+  <view class="tip">提示：关闭某咨询助手后，小程序内即不可见；其 H5 专属链接仍可独立访问。</view>
 </block>
 
 <block wx:else>

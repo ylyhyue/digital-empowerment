@@ -1,10 +1,18 @@
-// pages/chat/chat.js —— 智能体对话页（调用 agentChat 云函数，接 LLM 即时回答）
+// pages/chat/chat.js —— 咨询助手对话页（调用 agentChat 云函数，接 LLM 即时回答）
+// NAME_MAP：内部 key -> 页面展示名（不含 Bot/AI 字眼）
+const NAME_MAP = {
+  '条码师培训 Bot': '条码师培训助手',
+  '营商数擎 DataBE': '营商数擎助手',
+  '满意标尺 SatBE': '满意标尺助手',
+  '创业问答 Bot': '创业问答助手',
+  '通用咨询': '数字化赋能助手'
+};
 const GREETING = {
-  '条码师培训 Bot': '你好，我是条码师培训 Bot。基于 T/CABC 18.1-2025《条码师岗位能力要求》，可解答条码师初/中/高级考证、课件、题库、UDI·DPP 等。现在就问我吧～',
-  '营商数擎 DataBE': '你好，我是营商数擎 DataBE，专注数据要素赋能营商环境，提供参赛辅导与 AI 评审。请描述你的需求。',
-  '满意标尺 SatBE': '你好，我是满意标尺 SatBE，专注企业满意度测评与营商环境满意度赛道。请描述你的需求。',
-  '创业问答 Bot': '你好，我是创业问答 Bot，解答创业政策、标准化与条码通用问题。请描述你的问题。',
-  '通用咨询': '你好，我是数字化赋能智能助手，请描述你的问题或需求。'
+  '条码师培训 Bot': '你好，我是条码师培训助手。基于 T/CABC 18.1-2025《条码师岗位能力要求》，可解答条码师初/中/高级考证、课件、题库、UDI·DPP 等。现在就问我吧～',
+  '营商数擎 DataBE': '你好，我是营商数擎助手，专注数据要素赋能营商环境，提供参赛辅导与评审。请描述你的需求。',
+  '满意标尺 SatBE': '你好，我是满意标尺助手，专注企业满意度测评与营商环境满意度赛道。请描述你的需求。',
+  '创业问答 Bot': '你好，我是创业问答助手，解答创业政策、标准化与条码通用问题。请描述你的问题。',
+  '通用咨询': '你好，我是数字化赋能助手，请描述你的问题或需求。'
 };
 
 const AGENTS = {
@@ -18,6 +26,7 @@ const AGENTS = {
 Page({
   data: {
     agent: '通用咨询',
+    agentName: '数字化赋能助手',
     agentEmoji: '🤖',
     agentGrad: 'linear-gradient(135deg,#07C160,#0a9b54)',
     agentDesc: '通用咨询',
@@ -32,9 +41,11 @@ Page({
   onLoad(q) {
     const name = q.agent || '通用咨询';
     const info = AGENTS[name] || AGENTS['通用咨询'];
-    wx.setNavigationBarTitle({ title: name });
+    const display = NAME_MAP[name] || name;
+    wx.setNavigationBarTitle({ title: display });
     this.setData({
       agent: name,
+      agentName: display,
       agentEmoji: info.emoji,
       agentGrad: info.grad,
       agentDesc: info.desc,
@@ -77,7 +88,7 @@ Page({
   submitExpert() {
     const msgs = this.data.messages;
     const lastQ = [...msgs].reverse().find(m => m.role === 'user');
-    if (!lastQ) { wx.showToast({ title: '请先与智能体对话', icon: 'none' }); return; }
+    if (!lastQ) { wx.showToast({ title: '请先与咨询助手对话', icon: 'none' }); return; }
     if (!this.data.contact.trim()) { wx.showToast({ title: '请填写联系方式', icon: 'none' }); return; }
     wx.showLoading({ title: '提交中' });
     wx.cloud.callFunction({

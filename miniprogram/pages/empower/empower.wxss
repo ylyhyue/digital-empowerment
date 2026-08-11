@@ -48,6 +48,13 @@
 .link-list .listitem.sub:last-child {
   border-bottom: none;
 }
+/* 子平台点击提示 */
+.link-list .listitem.sub .enter {
+  color: #07C160;
+  font-size: 22rpx;
+  flex-shrink: 0;
+  margin-left: 12rpx;
+}
 
 /* 流程表格 */
 .flow-table {

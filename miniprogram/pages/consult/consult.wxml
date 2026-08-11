@@ -5,7 +5,7 @@
 </view>
 
 <view class="bot-card">
-  <view class="bot-avatar">🤖</view>
+  <view class="bot-avatar">💬</view>
   <view class="bot-body">
     <view class="bot-name">{{agentShow}}</view>
     <view class="bot-greet">{{greeting}}</view>
@@ -14,7 +14,7 @@
 
 <view class="card">
   <view class="form-row">
-    <text class="label">咨询智能体</text>
+    <text class="label">咨询助手</text>
     <picker mode="selector" range="{{agents}}" value="{{agentIndex}}" bindchange="onAgent">
       <view class="picker">{{agents[agentIndex]}}</view>
     </picker>

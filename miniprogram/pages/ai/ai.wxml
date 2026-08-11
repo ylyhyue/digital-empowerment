@@ -1,17 +1,16 @@
-<!-- pages/ai/ai.wxml -->
+<!-- pages/ai/ai.wxml —— 博士团队入口页 -->
 <view class="card">
   <view class="section-title"><view class="bar"></view>咨询通道 · 外部资源 · 随时在线</view>
-  <view class="muted" style="font-size:24rpx;color:#888;line-height:1.6;">条码相关需求请优先找「条码师培训」。所有咨询都会自动沉淀到飞书多维表格。</view>
+  <view class="muted" style="font-size:24rpx;color:#888;line-height:1.6;">条码相关需求请优先找「条码师培训助手」。所有咨询都会自动沉淀到飞书多维表格。</view>
 </view>
 
-<view class="agent" wx:for="{{agents}}" wx:key="key" bindtap="openChat" data-name="{{item.key}}" data-desc="{{item.desc}}">
+<view class="agent" wx:for="{{agents}}" wx:key="key" bindtap="openChat" data-name="{{item.key}}" data-desc="{{item.display}}">
   <view class="ai {{item.cls}}">{{item.icon}}</view>
-  <view class="ac"><view class="at">{{item.key}}</view><view class="ad">{{item.desc}}</view></view>
+  <view class="ac"><view class="at">{{item.display}}</view><view class="ad">{{item.desc}}</view></view>
 </view>
 
-<view wx:if="{{agents.length === 0}}" class="muted" style="text-align:center;padding:60rpx;color:#999;">博士团队加载中或已全部隐藏</view>
+<view wx:if="{{agents.length === 0}}" class="muted" style="text-align:center;padding:60rpx;color:#999;">咨询助手加载中或已全部隐藏</view>
 
-<view class="capture-note">💡 点击任意咨询工具即可开始对话，获取即时专业解答；如需专家深度跟进，在对话页点「📨 转专家」即可把问题结构化沉淀到飞书多维表格。</view>
+<view class="capture-note">💡 点击任意咨询助手即可开始对话，获取即时专业解答；如需专家深度跟进，在对话页点「📨 转专家」即可把问题结构化沉淀到飞书多维表格。</view>
 
 <view class="pillbtn" bindtap="openConsult">提交咨询 · 三通道沉淀</view>
-<button bindtap="goShare">点击分享本小程序</button>
