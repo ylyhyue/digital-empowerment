@@ -29,7 +29,7 @@
   </view>
   <view class="link-list">
     <view class="listitem sub" bindtap="goLink" data-url="http://47.103.52.154:39012/#/hub_node">
-      <text>子平台1：134 家三级节点平台</text>
+      <text>子平台1：157 家物流节点企业数</text>
       <text class="enter">点击查看 ›</text>
     </view>
     <view class="listitem sub" bindtap="goLink" data-url="http://1.117.220.9/mobile/member-query">
@@ -38,6 +38,10 @@
     </view>
     <view class="listitem sub" bindtap="goLink" data-url="http://chinatrace.org/manufacture2/page/login.html">
       <text>子平台3：商品追溯平台（预算100个冷藏仓）</text>
+      <text class="enter">点击查看 ›</text>
+    </view>
+    <view class="listitem sub" bindtap="goLink" data-url="http://47.103.52.154:8080/trouck/#/login">
+      <text>订单管理系统</text>
       <text class="enter">点击查看 ›</text>
     </view>
   </view>
